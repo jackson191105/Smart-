@@ -1,0 +1,21 @@
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-family: sans-serif;
+}
+
+.date {
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.type {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.amount {
+    font-weight: bold;
+}
