@@ -1,0 +1,22 @@
+body {
+    background-color: #F4F7FE;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2C3E50;
+    padding: 20px;
+}
+
+button {
+    background-color: #3498DB; /* Professional Blue */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input {
+    border: 1px solid #DCDFE6;
+    border-radius: 4px;
+    padding: 8px;
+    margin-right: 10px;
+}
