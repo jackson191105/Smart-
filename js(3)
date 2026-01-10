@@ -1,0 +1,56 @@
+<script>
+let transactions = [];
+
+// Example transaction (remove after testing)
+addTransaction("Deposit", 500);
+
+// Add transaction function
+function addTransaction(type, amount) {
+    const date = new Date().toLocaleString();
+    transactions.push({ date, type, amount });
+
+    const li = document.createElement("li");
+    li.textContent = `${date} - ${type}: ₹${amount}`;
+    document.getElementById("transactionList").appendChild(li);
+}
+
+// CSV Export
+function exportCSV() {
+    if (transactions.length === 0) {
+        alert("No transactions available");
+        return;
+    }
+
+    let csv = "Date,Type,Amount\n";
+    transactions.forEach(t => {
+        csv += `${t.date},${t.type},${t.amount}\n`;
+    });
+
+    const blob = new Blob([csv], { type: "text/csv" });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "transaction_history.csv";
+    link.click();
+}
+
+// PDF Export
+function exportPDF() {
+    if (transactions.length === 0) {
+        alert("No transactions available");
+        return;
+    }
+
+    const { jsPDF } = window.jspdf;
+    const pdf = new jsPDF();
+
+    pdf.text("Transaction History", 10, 10);
+
+    let y = 20;
+    transactions.forEach((t, i) => {
+        pdf.text(`${i + 1}. ${t.date} - ${t.type}: ₹${t.amount}`, 10, y);
+        y += 8;
+    });
+
+    pdf.save("transaction_history.pdf");
+}
+</script>
