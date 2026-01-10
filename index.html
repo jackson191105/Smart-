@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Banking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-box" id="loginBox">
+    <h2>Smart Banking Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p class="hint">Demo: admin / 1234</p>
+</div>
+
+<div class="dashboard" id="dashboard">
+    <header>
+        <h1>Banking Dashboard</h1>
+        <button onclick="logout()">Logout</button>
+    </header>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Balance</h3>
+            <p id="balance">₹ 0</p>
+        </div>
+
+        <div class="card">
+            <h3>Deposit</h3>
+            <input type="number" id="depositAmount" placeholder="Amount">
+            <button onclick="deposit()">Deposit</button>
+        </div>
+
+        <div class="card">
+            <h3>Withdraw</h3>
+            <input type="number" id="withdrawAmount" placeholder="Amount">
+            <button onclick="withdraw()">Withdraw</button>
+        </div>
+    </div>
+
+    <div class="transactions">
+        <h3>Transaction History</h3>
+        <ul id="transactionList"></ul>
+    </div>
+</div>
+
+<!-- ✅ Correct Script Tag -->
+<script src="script.js"></script>
+
+</body>
+</html>
