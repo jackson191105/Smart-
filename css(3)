@@ -1,0 +1,17 @@
+.export-buttons {
+    margin: 10px 0;
+}
+
+.export-buttons button {
+    padding: 8px 15px;
+    margin-right: 10px;
+    background: #1e3c72;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.export-buttons button:hover {
+    background: #16315d;
+}
