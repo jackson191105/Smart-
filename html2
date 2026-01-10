@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top-bar">
+    <h2>🏦 Banking Dashboard</h2>
+    <button class="logout-btn" type="button" onclick="logout()">Logout</button>
+</header>
+
+<main>
+
+<section class="dashboard">
+
+    <div class="card balance-card">
+        <h3>Current Balance</h3>
+        <p id="balance">₹ 0</p>
+    </div>
+
+    <div class="card action-card">
+        <h3>Deposit</h3>
+        <input type="number" id="depositAmount" placeholder="Enter amount" min="1" autocomplete="off">
+        <button type="button" onclick="deposit()">Deposit</button>
+    </div>
+
+    <div class="card action-card">
+        <h3>Withdraw</h3>
+        <input type="number" id="withdrawAmount" placeholder="Enter amount" min="1" autocomplete="off">
+        <button type="button" onclick="withdraw()">Withdraw</button>
+    </div>
+
+</section>
+
+<section class="history-section">
+    <h3>Transaction History</h3>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Type</th>
+                    <th>Amount</th>
+                    <th>Balance</th>
+                </tr>
+            </thead>
+            <tbody id="history-body"></tbody>
+        </table>
+    </div>
+
+    <button class="download-btn" type="button" onclick="downloadCSV()">
+        ⬇ Download Statement
+    </button>
+</section>
+
+</main>
+
+<script src="script.js" defer></script>
+</body>
+</html>
