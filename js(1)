@@ -1,0 +1,17 @@
+function updateProfile(userName, accNumber) {
+    const nameElement = document.querySelector('.user-profile h4');
+    const accElement = document.querySelector('.user-profile p');
+    const initialElement = document.querySelector('.user-profile div div:first-child');
+
+    if (nameElement) nameElement.innerText = userName;
+    if (accElement) accElement.innerText = "Acc: " + accNumber;
+    
+    // Automatically sets initials (e.g., "Jackson Smith" -> "JS")
+    if (initialElement) {
+        const initials = userName.split(' ').map(n => n[0]).join('');
+        initialElement.innerText = initials.toUpperCase();
+    }
+}
+
+// Example usage:
+// updateProfile("John Doe", "9988-7766-1234");
