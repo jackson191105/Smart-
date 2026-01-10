@@ -1,0 +1,21 @@
+<script>
+function exportPDF() {
+    if (transactions.length === 0) {
+        alert("No transactions to export");
+        return;
+    }
+
+    const { jsPDF } = window.jspdf;
+    const pdf = new jsPDF();
+
+    pdf.text("Transaction History", 10, 10);
+
+    let y = 20;
+    transactions.forEach((t, index) => {
+        pdf.text(`${index + 1}. ${t.date} - ${t.type} ₹${t.amount}`, 10, y);
+        y += 8;
+    });
+
+    pdf.save("transaction_history.pdf");
+}
+</script>
