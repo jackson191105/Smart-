@@ -1,0 +1,16 @@
+.card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    border-top: 5px solid #003366; /* Matching your header */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.balance-card { border-top-color: #28a745; }
+.deposit-card { border-top-color: #007bff; }
+.withdraw-card { border-top-color: #dc3545; }
