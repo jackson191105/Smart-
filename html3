@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Banking Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="header">
+    <h1>🏦 BMS</h1>
+    <p>Account No: 2003350672</p>
+</div>
+
+<div class="dashboard">
+
+    <div class="card">
+        <div class="icon">📄</div>
+        <p>Account Details</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">👤</div>
+        <p>Profile</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">🎓</div>
+        <p>Loan Information</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">👪</div>
+        <p>Nominee Details</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">🏦</div>
+        <p>Bank Accounts</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">💬</div>
+        <p>Support</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">✔️</div>
+        <p>KYC Verification</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">💰</div>
+        <p>Transactions</p>
+    </div>
+
+</div>
+
+<div class="footer">
+    <p>For updates contact your Bank Officer</p>
+</div>
+
+</body>
+</html>
