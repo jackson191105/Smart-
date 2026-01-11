@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Banking Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+    <h2>SmartBank</h2>
+    <button class="logout">Logout</button>
+</header>
+
+<section class="summary">
+    <div class="summary-card balance">
+        <h4>Total Balance</h4>
+        <h2>₹ 25,000</h2>
+    </div>
+    <div class="summary-card income">
+        <h4>Total Deposits</h4>
+        <h2>₹ 10,000</h2>
+    </div>
+    <div class="summary-card expense">
+        <h4>Total Withdrawals</h4>
+        <h2>₹ 5,000</h2>
+    </div>
+</section>
+
+<section class="actions">
+    <div class="action-card">💸 Quick Transfer</div>
+    <div class="action-card">📥 Deposit</div>
+    <div class="action-card">📤 Withdraw</div>
+    <div class="action-card">📄 Statement</div>
+</section>
+
+<section class="transactions">
+    <h3>Recent Transactions</h3>
+    <ul>
+        <li>₹2,000 deposited <span>Today</span></li>
+        <li>₹500 withdrawn <span>Yesterday</span></li>
+        <li>₹1,200 transfer <span>2 days ago</span></li>
+    </ul>
+</section>
+
+</body>
+</html>
